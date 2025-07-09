@@ -1,0 +1,11 @@
+def to_snake_case(text):
+    import re
+    text = re.sub(r'[\s\-]+', '_', text)
+    text = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', text)
+    return text.lower()
+
+
+Write a JavaScript function toCamelCase that takes in a string in sentence case string as input. 
+Include error handling for non-string inputs, throw an error with a descriptive message 
+if inputs are invalid. Handle edge cases like undefined or null values. 
+For example, toCamelCase(foo bar) should return fooBar, but toCamelCase('5', 3) should throw an error.
