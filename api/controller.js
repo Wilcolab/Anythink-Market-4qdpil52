@@ -17,6 +17,7 @@ exports.calculate = function(req, res) {
     'multiply': function(a, b) { return a * b },
     'divide':   function(a, b) { return a / b },
     'power':    function(a, b) { return Math.pow(Number(a), Number(b)) }
+    // 'modulus':  function(a, b) { return a % b } // Uncomment if modulus is needed
   };
 
   if (!req.query.operation) {
