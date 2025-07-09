@@ -36,6 +36,9 @@ function calculate(operand1, operand2, operation) {
         case '^':
             uri += "?operation=power";
             break;
+        // case '%':
+        //     uri += "?operation=modulus"; // Uncomment if modulus is needed
+        //     break;
         default:
             setError();
             return;
